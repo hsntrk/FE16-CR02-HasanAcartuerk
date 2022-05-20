@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    .logo {
+        font-family: 'Great Vibes', cursive;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+        li {
+            // display: flex;
+            // justify-content: space-between;
+            // align-items: center;
+            margin-right: 1rem;
+            a {
+                // justify-content: center;
+                // justify-content: space-between;
+            }
+        }
+    }
+}
+
+.types-of-food {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    padding: 1rem;
+}
