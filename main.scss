@@ -1,6 +1,10 @@
+$primary-color: black;
+$secondary-color: white;
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    list-style: none;
 }
 
 // navbar
@@ -10,6 +14,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    background-color: $secondary-color;
     .logo {
         font-family: 'Great Vibes', cursive;
         font-size: 2rem;
@@ -19,7 +24,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        list-style: none;
         font-family: 'Nunito', sans-serif;
         font-weight: bold;
         li {
@@ -27,10 +31,6 @@
             // justify-content: space-between;
             // align-items: center;
             margin-right: 1rem;
-            a {
-                // justify-content: center;
-                // justify-content: space-between;
-            }
         }
     }
 }
@@ -148,7 +148,7 @@
 
 // styling text overlay in image
 .img-text {
-    background-color: black;
+    background-color: $primary-color;
     opacity: 0.6;
 }
 
@@ -160,4 +160,54 @@
 
 .img-text {
     padding: .3rem;
+}
+
+// bottom footer section
+.footer {
+    background-color: $primary-color;
+    text-align: center;
+    color: $secondary-color;
+    font-family: 'Nunito', sans-serif;
+    font-weight: lighter;
+    .register-menu {
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem 14rem;
+        a {
+            text-decoration: none;
+            color: $secondary-color;
+            &:hover {
+                color: orange;
+            }
+        }
+    }
+    .social-media-icons {
+        display: flex;
+        justify-content: center;
+        color: $secondary-color;
+        li {
+            padding: 0 0.5rem;
+            .instagram {
+                color: $secondary-color;
+                &:hover {
+                    color: violet;
+                }
+            }
+            .facebook {
+                color: $secondary-color;
+                &:hover {
+                    color: blue;
+                }
+            }
+            .youtube {
+                color: $secondary-color;
+                &:hover {
+                    color: red;
+                }
+            }
+        }
+    }
+    .footer-copyright {
+        padding: 1rem;
+    }
 }

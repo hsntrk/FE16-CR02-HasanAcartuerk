@@ -1,6 +1,9 @@
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
 }
 
 .navbar {
@@ -18,6 +21,7 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem;
+  background-color: white;
 }
 
 .navbar .logo {
@@ -36,7 +40,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  list-style: none;
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
 }
@@ -166,5 +169,73 @@
 
 .img-text {
   padding: .3rem;
+}
+
+.footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-weight: lighter;
+}
+
+.footer .register-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1rem 14rem;
+}
+
+.footer .register-menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer .register-menu a:hover {
+  color: orange;
+}
+
+.footer .social-media-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.footer .social-media-icons li {
+  padding: 0 0.5rem;
+}
+
+.footer .social-media-icons li .instagram {
+  color: white;
+}
+
+.footer .social-media-icons li .instagram:hover {
+  color: violet;
+}
+
+.footer .social-media-icons li .facebook {
+  color: white;
+}
+
+.footer .social-media-icons li .facebook:hover {
+  color: blue;
+}
+
+.footer .social-media-icons li .youtube {
+  color: white;
+}
+
+.footer .social-media-icons li .youtube:hover {
+  color: red;
+}
+
+.footer .footer-copyright {
+  padding: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
