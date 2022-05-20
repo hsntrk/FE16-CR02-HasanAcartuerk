@@ -60,4 +60,94 @@
   font-weight: bold;
   padding: 1rem;
 }
+
+.image-text, .salad-egg, .burger, .pizza, .pancakes, .pasta, .salad-mozarella, .breakfast, .cake, .salad-ruccola {
+  font-family: 'Nunito', sans-serif;
+  font-weight: lighter;
+  color: white;
+}
+
+.section-food-grid {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin: 3rem 7rem;
+}
+
+.salad-egg {
+  background: url(./media/salad-egg.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.burger {
+  background: url(./media/burger.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.pizza {
+  background: url(./media/pizza.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.pancakes {
+  background: url(./media/pancakes.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.pasta {
+  background: url(./media/pasta-zucchini.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.salad-mozarella {
+  background: url(./media/salad-mozarella.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.breakfast {
+  background: url(./media/fruits.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.cake {
+  background: url(./media/cake.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.salad-ruccola {
+  background: url(./media/salad-ruccola.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
 /*# sourceMappingURL=main.css.map */
