@@ -46,19 +46,16 @@
     padding: 1rem;
 }
 
-// image style for extend
+// image style for extend usage 
 .image-text {
     font-family: 'Nunito', sans-serif;
     font-weight: lighter;
     color: white;
+    text-align: center;
+    position: relative;
 }
 
-// .image-setup {
-//     width: 100%;
-//     height: 100%;
-//     background-size: cover;
-//     background-position: center;
-// }
+// grid style
 .section-food-grid {
     display: grid;
     height: 100vh;
@@ -140,11 +137,27 @@
     background-position: center;
 }
 
-.salad-ruccola {
-    background: url(./media/salad-ruccola.jpg);
+.salad-mix {
+    background: url(./media/salad-mix.jpg);
     @extend .image-text;
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
+}
+
+// styling text overlay in image
+.img-text {
+    background-color: black;
+    opacity: 0.6;
+}
+
+.overlay-text {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.img-text {
+    padding: .3rem;
 }

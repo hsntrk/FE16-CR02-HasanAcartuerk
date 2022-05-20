@@ -61,10 +61,12 @@
   padding: 1rem;
 }
 
-.image-text, .salad-egg, .burger, .pizza, .pancakes, .pasta, .salad-mozarella, .breakfast, .cake, .salad-ruccola {
+.image-text, .salad-egg, .burger, .pizza, .pancakes, .pasta, .salad-mozarella, .breakfast, .cake, .salad-mix {
   font-family: 'Nunito', sans-serif;
   font-weight: lighter;
   color: white;
+  text-align: center;
+  position: relative;
 }
 
 .section-food-grid {
@@ -143,11 +145,26 @@
   background-position: center;
 }
 
-.salad-ruccola {
-  background: url(./media/salad-ruccola.jpg);
+.salad-mix {
+  background: url(./media/salad-mix.jpg);
   width: 100%;
   height: 100%;
   background-size: cover;
   background-position: center;
+}
+
+.img-text {
+  background-color: black;
+  opacity: 0.6;
+}
+
+.overlay-text {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.img-text {
+  padding: .3rem;
 }
 /*# sourceMappingURL=main.css.map */
