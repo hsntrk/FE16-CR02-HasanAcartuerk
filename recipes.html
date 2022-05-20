@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Recipe of the Month</title>
+    <style>
+        .recipe-of-the-month {
+            display: flex;
+            margin: 2rem;
+            font-family: 'Nunito', sans-serif;
+            /* flex-direction: row; */
+            justify-content: center;
+            /* align-items: left; */
+            text-align: left;
+        }
+        
+        .recipe-box {
+            background-color: bisque;
+            display: flex;
+            padding: 2rem;
+            /* flex-direction: row; */
+            /* justify-content: flex-start; */
+            align-items: center;
+            /* flex-wrap: wrap; */
+            border-radius: 3rem;
+            box-shadow: 10px;
+        }
+        
+        .food-pic {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            padding: 1rem;
+        }
+        
+        .star {
+            margin: 10px;
+            font-size: 1.5rem;
+            color: orange;
+        }
+        
+        .menu-right,
+        .menu.left {
+            padding: 2rem;
+        }
+        
+        .select-pasta {
+            background-color: orange;
+            padding: 10px;
+            border-radius: 10%;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">Food blog</div>
+        <h1 class="recipe-title">Recipe of the Month</h1>
+        <ul>
+            <li>
+                <a href="/recipes.html" target="_blank">Recipes</a>
+            </li>
+            <li>
+                <a href="/index.html" target="_self">Home</a>
+            </li>
+            <li>
+                <input class="search-icon" type="image" src="./media/search.png" alt="Search Icon">
+            </li>
+        </ul>
+    </nav>
+
+    <!-- MENU FOOD OF THE MONTH SELECTED-->
+    <main class="types-of-food">
+        <p>Pasta Quattro Formaggi</p>|
+        <p class="select-pasta">Pasta Gorgonzola </p>|
+        <p>Pasta Arrabbiata </p>|
+        <p>Pasta Con Spinaci</p>
+    </main>
+
+    <!-- Section Card Recipes -->
+
+    <div class="recipe-of-the-month">
+        <div class="recipe-box">
+            <div class="menu-left">
+                <h1>Gorgonzola Pasta</h1>
+                <img class="food-pic" src="./media/gorgonzola.jpg" alt="Gorgonzola">
+                <img class="food-pic" src="./media/pasta.jpg" alt="Pasta">
+                <p>Simple Pasta dish made <br>with gorgonzola sauce, <br>ready in 15 minutes.</p>
+
+                <p class="star">&#9733;&#9733;&#9733;&#9733;&#9733; </p>
+                <p>5 from 36 votes</p>
+            </div>
+            <div class="menu-right">
+                <ul>
+                    <li>400 g (14oz) penne pasta</li>
+                    <li>2 tbsp unsalted butter</li>
+                    <li>1 banana shallot</li>
+                    <li>2 cloves minced garlic</li>
+                    <li>150 ml double (heavy) cream</li>
+                    <li>125 g Gorgonzola cheese</li>
+                    <li>2 tbsp finely grated (shredded) parmesan</li>
+                    <li>3 tbsp chopped fresh parsley</li>
+                    <li>To Serve:</li>
+                    <li>1 tbsp finely grated (shredded) parmesan</li>
+                    <li>1 pinch black pepper</li>
+                    <li>1 tbsp chopped fresh parsley</li>
+                    <li>2 tbsp chopped toasted walnuts</li>
+                </ul>
+            </div>
+        </div class="recipe-box">
+    </div>
+
+    <!-- FOOTER MENU -->
+
+    <footer class="footer">
+        <ul class="register-menu">
+            <li>About</li>|
+            <li>Recipes</li>|
+            <li>FAQ</li>|
+            <li>
+                <a class="contact" href="https://codefactory.wien/en/contact-en/" target="_blank">Contact us</a></li>
+        </ul>
+        <ul class="social-media-icons">
+            <li>
+                <a class="instagram" href="http://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+                <a class="facebook" href="http://facebook.com" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+            </li>
+            <li>
+                <a class="youtube" href="http://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+        </ul>
+        <p class="footer-copyright">
+            Copyright &copy; 2022 Hasan Acartürk
+        </p>
+    </footer>
+</body>
+
+</html>

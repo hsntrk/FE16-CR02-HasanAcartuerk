@@ -20,6 +20,10 @@ $secondary-color: white;
         font-size: 2rem;
         font-weight: bold;
     }
+    .recipe-title {
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+    }
     ul {
         display: flex;
         justify-content: space-between;
@@ -27,10 +31,18 @@ $secondary-color: white;
         font-family: 'Nunito', sans-serif;
         font-weight: bold;
         li {
-            // display: flex;
-            // justify-content: space-between;
-            // align-items: center;
-            margin-right: 1rem;
+            margin-right: 2rem;
+            padding-right: 1rem;
+            a {
+                text-decoration: none;
+                color: $primary-color;
+                &:hover {
+                    color: orange;
+                    border-bottom: 4px solid blue;
+                    border-top: 4px solid blue;
+                    border-radius: 20%;
+                }
+            }
         }
     }
 }
@@ -43,6 +55,7 @@ $secondary-color: white;
     border-top: 1px solid lightgray;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
+    font-size: 0.9rem;
     padding: 1rem;
 }
 
@@ -50,7 +63,7 @@ $secondary-color: white;
 .image-text {
     font-family: 'Nunito', sans-serif;
     font-weight: lighter;
-    color: white;
+    color: $secondary-color;
     text-align: center;
     position: relative;
 }
