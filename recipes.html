@@ -19,7 +19,7 @@
     <style>
         .recipe-of-the-month {
             display: flex;
-            margin: 2rem;
+            margin: 4rem;
             font-family: 'Nunito', sans-serif;
             justify-content: center;
             text-align: left;
@@ -28,7 +28,11 @@
         .recipe-box {
             background-color: bisque;
             display: flex;
-            padding: 2rem;
+            flex-basis: 80%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 1rem;
             align-items: center;
             border-radius: 3rem;
             box-shadow: gray 0 0 15px;
@@ -50,8 +54,13 @@
         }
         
         .menu-right,
-        .menu.left {
+        .menu.left,
+        .menu-bottom {
             padding: 2rem;
+        }
+        
+        .menu-left {
+            text-align: center;
         }
         
         .select-pasta {
@@ -59,6 +68,13 @@
             padding: 10px;
             border-radius: 10%;
             color: white;
+        }
+        
+        .menu-bottom {
+            /* justify-content: flex-end;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: flex-end; */
         }
     </style>
 </head>
@@ -105,19 +121,32 @@
             </div>
             <div class="menu-right">
                 <ul>
-                    <li>400 g (14oz) penne pasta</li>
+                    <h3>INGREDIENTS</h3><br>
+                    <li>400 g (14oz) penne pasta - <i>(or your favourite pasta shapes)</i></li>
                     <li>2 tbsp unsalted butter</li>
-                    <li>1 banana shallot</li>
+                    <li>1 banana shallot - <i>peeled and finely chopped (or use ½ small onion)</i></li>
                     <li>2 cloves minced garlic</li>
                     <li>150 ml double (heavy) cream</li>
-                    <li>125 g Gorgonzola cheese</li>
+                    <li>125 g Gorgonzola cheese - <i>crumbled or roughly chopped</i></li>
                     <li>2 tbsp finely grated (shredded) parmesan</li>
-                    <li>3 tbsp chopped fresh parsley</li>
+                    <li>3 tbsp chopped fresh parsley</li><br>
                     <li>To Serve:</li>
                     <li>1 tbsp finely grated (shredded) parmesan</li>
                     <li>1 pinch black pepper</li>
                     <li>1 tbsp chopped fresh parsley</li>
-                    <li>2 tbsp chopped toasted walnuts</li>
+                    <li>2 tbsp chopped toasted walnuts - <i>(simply dry-fry them in a frying pan for 1-2 minutes until lightly browned)</i></li>
+                </ul>
+            </div>
+            <div class="menu-bottom">
+                <ul>
+                    <h3>INSTRUCTIONS</h3><br>
+                    <li>1 - Cook the pasta in boiling water as per the cooking instructions, until al dente.</li>
+                    <li>2 - Melt the butter in a large frying pan over a medium heat. Add the chopped shallot and fry for 3-4 minutes, until softened.</li>
+                    <li>3 - Add the minced garlic and cook for a further 1 minute.</li>
+                    <li>4 - Add cream, Gorgonzola cheese, Parmesan, parsley, salt and pepper and stir until the Gorgonzola melts.</li>
+                    <li>5 - By this time the pasta should be ready. Drain the pasta in a colander over the sink, reserving ½ cup of the cooking water.</li>
+                    <li>6 - Add the pasta to the pan with the cream sauce and stir together. Add in a splash of the pasta cooking water (or more) if you want to loosen up the sauce at all.</li>
+                    <li>7 - Divide the pasta between plates. Top with Parmesan, black pepper, fresh parsley and toasted walnuts, then serve.</li>
                 </ul>
             </div>
         </div class="recipe-box">
