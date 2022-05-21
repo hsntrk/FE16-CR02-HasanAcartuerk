@@ -8,16 +8,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding: 1rem;
   background-color: white;
 }
@@ -43,6 +43,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
 }
@@ -73,6 +77,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   border-bottom: 1px solid lightgray;
   border-top: 1px solid lightgray;
   font-family: 'Nunito', sans-serif;
@@ -81,7 +89,7 @@
   padding: 1rem;
 }
 
-.image-text, .salad-egg, .burger, .pizza, .pancakes, .pasta, .salad-mozarella, .breakfast, .cake, .salad-mix {
+.image-text, .section-food-grid .salad-egg, .section-food-grid .burger, .section-food-grid .pizza, .section-food-grid .pancakes, .section-food-grid .pasta, .section-food-grid .salad-mozarella, .section-food-grid .breakfast, .section-food-grid .cake, .section-food-grid .salad-mix {
   font-family: 'Nunito', sans-serif;
   font-weight: lighter;
   color: white;
@@ -107,56 +115,56 @@
   margin: 2rem auto;
 }
 
-.salad-egg {
-  background: url(./media/salad-egg.jpg);
+.section-food-grid .salad-egg {
+  background: url(/media/salad-egg.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.burger {
-  background: url(./media/burger.jpg);
+.section-food-grid .burger {
+  background: url(/media/burger.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.pizza {
-  background: url(./media/pizza.jpg);
+.section-food-grid .pizza {
+  background: url(/media/pizza.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.pancakes {
-  background: url(./media/pancakes.jpg);
+.section-food-grid .pancakes {
+  background: url(/media/pancakes.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.pasta {
-  background: url(./media/pasta-zucchini.jpg);
+.section-food-grid .pasta {
+  background: url(/media/pasta-zucchini.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.salad-mozarella {
-  background: url(./media/salad-mozarella.jpg);
+.section-food-grid .salad-mozarella {
+  background: url(/media/salad-mozarella.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.breakfast {
-  background: url(./media/fruits.jpg);
+.section-food-grid .breakfast {
+  background: url(/media/fruits.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.cake {
-  background: url(./media/cake.jpg);
+.section-food-grid .cake {
+  background: url(/media/cake.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.salad-mix {
-  background: url(./media/salad-mix.jpg);
+.section-food-grid .salad-mix {
+  background: url(/media/salad-mix.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -191,6 +199,13 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding: 1rem 14rem;
 }
 
@@ -210,6 +225,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   color: white;
 }
 

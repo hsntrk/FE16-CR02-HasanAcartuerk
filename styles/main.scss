@@ -1,18 +1,9 @@
-$primary-color: black;
-$secondary-color: white;
-* {
-    padding: 0;
-    margin: 0;
-    // box-sizing: border-box;
-    list-style: none;
-}
-
+@import "./reset";
+@import "./variables";
+@import "./mixin";
 // navbar
 .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @include flexCenter(space-between, row);
     padding: 1rem;
     background-color: $secondary-color;
     .logo {
@@ -25,9 +16,7 @@ $secondary-color: white;
         font-weight: bold;
     }
     ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flexCenter(space-between, row);
         font-family: 'Nunito', sans-serif;
         font-weight: bold;
         li {
@@ -48,9 +37,7 @@ $secondary-color: white;
 }
 
 .types-of-food {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flexCenter(space-around, row);
     border-bottom: 1px solid lightgray;
     border-top: 1px solid lightgray;
     font-family: 'Nunito', sans-serif;
@@ -82,69 +69,51 @@ $secondary-color: white;
     padding-left: 4rem;
     padding-right: 4rem;
     margin: 2rem auto;
-}
-
-.salad-egg {
-    background: url(./media/salad-egg.jpg);
-    @extend .image-text;
-    background-size: cover;
-    background-position: center;
-}
-
-.burger {
-    background: url(./media/burger.jpg);
-    @extend .image-text;
-    background-size: cover;
-    background-position: center;
-}
-
-.pizza {
-    background: url(./media/pizza.jpg);
-    @extend .image-text;
-    background-size: cover;
-    background-position: center;
-}
-
-.pancakes {
-    background: url(./media/pancakes.jpg);
-    @extend .image-text;
-    background-size: cover;
-    background-position: center;
-}
-
-.pasta {
-    background: url(./media/pasta-zucchini.jpg);
-    @extend .image-text;
-    background-size: cover;
-    background-position: center;
-}
-
-.salad-mozarella {
-    background: url(./media/salad-mozarella.jpg);
-    @extend .image-text;
-    background-size: cover;
-    background-position: center;
-}
-
-.breakfast {
-    background: url(./media/fruits.jpg);
-    @extend .image-text;
-    background-size: cover;
-    background-position: center;
-}
-
-.cake {
-    background: url(./media/cake.jpg);
-    @extend .image-text;
-    background-size: cover;
-    background-position: center;
-}
-
-.salad-mix {
-    background: url(./media/salad-mix.jpg);
-    @extend .image-text;
-    background-size: cover;
-    background-position: center;
+    .salad-egg {
+        background: url(/media/salad-egg.jpg);
+        @extend .image-text;
+        @include background();
+    }
+    .burger {
+        background: url(/media/burger.jpg);
+        @extend .image-text;
+        @include background();
+    }
+    .pizza {
+        background: url(/media/pizza.jpg);
+        @extend .image-text;
+        @include background();
+    }
+    .pancakes {
+        background: url(/media/pancakes.jpg);
+        @extend .image-text;
+        @include background();
+    }
+    .pasta {
+        background: url(/media/pasta-zucchini.jpg);
+        @extend .image-text;
+        @include background();
+    }
+    .salad-mozarella {
+        background: url(/media/salad-mozarella.jpg);
+        @extend .image-text;
+        @include background();
+    }
+    .breakfast {
+        background: url(/media/fruits.jpg);
+        @extend .image-text;
+        @include background();
+    }
+    .cake {
+        background: url(/media/cake.jpg);
+        @extend .image-text;
+        @include background();
+    }
+    .salad-mix {
+        background: url(/media/salad-mix.jpg);
+        @extend .image-text;
+        @include background();
+    }
 }
 
 // styling text overlay in image
@@ -172,8 +141,7 @@ $secondary-color: white;
     font-family: 'Nunito', sans-serif;
     font-weight: lighter;
     .register-menu {
-        display: flex;
-        justify-content: space-around;
+        @include flexCenter(space-around, row);
         padding: 1rem 14rem;
         a {
             text-decoration: none;
@@ -184,8 +152,7 @@ $secondary-color: white;
         }
     }
     .social-media-icons {
-        display: flex;
-        justify-content: center;
+        @include flexCenter(center, row);
         color: $secondary-color;
         li {
             padding: 0 0.5rem;
