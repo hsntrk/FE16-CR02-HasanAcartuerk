@@ -70,47 +70,47 @@
     padding-right: 4rem;
     margin: 2rem auto;
     .salad-egg {
-        background: url(/media/salad-egg.jpg);
+        background: url(../media/salad-egg.jpg);
         @extend .image-text;
         @include background();
     }
     .burger {
-        background: url(/media/burger.jpg);
+        background: url(../media/burger.jpg);
         @extend .image-text;
         @include background();
     }
     .pizza {
-        background: url(/media/pizza.jpg);
+        background: url(../media/pizza.jpg);
         @extend .image-text;
         @include background();
     }
     .pancakes {
-        background: url(/media/pancakes.jpg);
+        background: url(../media/pancakes.jpg);
         @extend .image-text;
         @include background();
     }
     .pasta {
-        background: url(/media/pasta-zucchini.jpg);
+        background: url(../media/pasta-zucchini.jpg);
         @extend .image-text;
         @include background();
     }
     .salad-mozarella {
-        background: url(/media/salad-mozarella.jpg);
+        background: url(../media/salad-mozarella.jpg);
         @extend .image-text;
         @include background();
     }
     .breakfast {
-        background: url(/media/fruits.jpg);
+        background: url(../media/fruits.jpg);
         @extend .image-text;
         @include background();
     }
     .cake {
-        background: url(/media/cake.jpg);
+        background: url(../media/cake.jpg);
         @extend .image-text;
         @include background();
     }
     .salad-mix {
-        background: url(/media/salad-mix.jpg);
+        background: url(../media/salad-mix.jpg);
         @extend .image-text;
         @include background();
     }
@@ -196,6 +196,15 @@
         padding-right: 1rem;
         margin: 0.5rem auto;
     }
+    .logo {
+        font-size: 1rem;
+    }
+    .navbar ul li {
+            font-size: 0.5rem;
+            margin-right: 0.2rem;
+            padding-right: 0.5rem;
+        
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 980px) {
@@ -212,4 +221,10 @@
         padding-right: 1.5rem;
         margin: 1rem auto;
     }
+    .navbar ul li {
+        font-size: 0.7rem;
+        margin-right: 0.2rem;
+        padding-right: 0.5rem;
+
+}
 }

@@ -116,55 +116,55 @@
 }
 
 .section-food-grid .salad-egg {
-  background: url(/media/salad-egg.jpg);
+  background: url(../media/salad-egg.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .section-food-grid .burger {
-  background: url(/media/burger.jpg);
+  background: url(../media/burger.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .section-food-grid .pizza {
-  background: url(/media/pizza.jpg);
+  background: url(../media/pizza.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .section-food-grid .pancakes {
-  background: url(/media/pancakes.jpg);
+  background: url(../media/pancakes.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .section-food-grid .pasta {
-  background: url(/media/pasta-zucchini.jpg);
+  background: url(../media/pasta-zucchini.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .section-food-grid .salad-mozarella {
-  background: url(/media/salad-mozarella.jpg);
+  background: url(../media/salad-mozarella.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .section-food-grid .breakfast {
-  background: url(/media/fruits.jpg);
+  background: url(../media/fruits.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .section-food-grid .cake {
-  background: url(/media/cake.jpg);
+  background: url(../media/cake.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .section-food-grid .salad-mix {
-  background: url(/media/salad-mix.jpg);
+  background: url(../media/salad-mix.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -283,6 +283,14 @@
     padding-right: 1rem;
     margin: 0.5rem auto;
   }
+  .logo {
+    font-size: 1rem;
+  }
+  .navbar ul li {
+    font-size: 0.5rem;
+    margin-right: 0.2rem;
+    padding-right: 0.5rem;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 980px) {
@@ -300,6 +308,11 @@
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     margin: 1rem auto;
+  }
+  .navbar ul li {
+    font-size: 0.7rem;
+    margin-right: 0.2rem;
+    padding-right: 0.5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
